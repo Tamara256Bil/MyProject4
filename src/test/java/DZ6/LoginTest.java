@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class LoginInTest extends AbstractTest {
+public class LoginTest extends AbstractTest {
 
     @Test
     void loginIn(){
