@@ -18,7 +18,7 @@ public class LoginTest extends AbstractTest {
         new MainPage(getDriver()).goToAccountPage();
         Assertions.assertTrue(getDriver().getTitle().equals("livejournal – Sign in"), "страница входа недоступна");
         new LoginPage(getDriver())
-                .setLogin("tamasy17@rambler.ru")
+                .setLogin("tamasya17@rambler.ru")
                 .setPassword("335577Roman")
                 .loginIn();
         Assertions.assertTrue(getDriver().findElement(By.id("id-username")).getText().equals("Your account"));
@@ -30,7 +30,7 @@ public class LoginTest extends AbstractTest {
         new MainPage(getDriver()).goToAccountPage();
         Assertions.assertTrue(getDriver().getTitle().equals("livejournal – Sign in"), "страница входа недоступна");
         new LoginPage(getDriver())
-                .loginIn("tamasy17@rambler.ru","335577Roman");
+                .loginIn("tamasya17@rambler.ru","335577Roman");
         Assertions.assertTrue(getDriver().findElement(By.id("id-username")).getText().equals("Your account"));
     }
 
